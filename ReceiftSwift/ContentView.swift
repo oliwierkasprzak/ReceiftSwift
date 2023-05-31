@@ -9,13 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                VStack {
+                    HStack {
+                        
+                            ScrollView(.horizontal) {
+                                LazyHGrid(rows: [GridItem(.fixed(120))], spacing: 16) {
+                                    ForEach(0...3, id: \.self) { index in
+                                        Button(action: {
+                                            
+                                        }) {
+                                            Label("Receipt", systemImage: "bag.badge.questionmark")
+                                        }
+                                    
+                                        .frame(width: 100, height: 100)
+                                        .padding()
+                                        .background(Color.orange.opacity(0.8))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                        .padding(.horizontal)
+                                        
+                                    }
+                                    .navigationTitle("Recent")
+                                }
+                            
+                            
+                        }
+
+                        
+                    }
+                }
+                .navigationTitle("ReceiptScanner")
+            }
         }
-        .padding()
     }
 }
 
