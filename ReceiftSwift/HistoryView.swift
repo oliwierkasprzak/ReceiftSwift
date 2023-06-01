@@ -8,12 +8,10 @@ import SwiftUI
 
 struct HistoryView: View {
     let receipts = Receipt.receipts
-    
+
     var body: some View {
         NavigationView {
-            ZStack {
-                Color.red.edgesIgnoringSafeArea(.all) // Set the desired background color here
-                
+            
                 VStack {
                     List(receipts) { receipt in
                         NavigationLink {
@@ -28,14 +26,14 @@ struct HistoryView: View {
                         }
                     }
                 }
-                .background(.pink)
+                .background(.yellow)
                 .scrollContentBackground(.hidden)
-            }
-            .navigationBarTitle("History")
-            .navigationBarTitleDisplayMode(.inline)
+                .navigationBarTitle("History")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(Color.cyan, for: .navigationBar)
         }
     }
-    
+
     private func formattedDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

@@ -15,9 +15,12 @@
 		4F558C7C2A2889F400F18C66 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F558C7B2A2889F400F18C66 /* HistoryView.swift */; };
 		4F558C7E2A288A4D00F18C66 /* Receipts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F558C7D2A288A4D00F18C66 /* Receipts.swift */; };
 		4F558C802A288F2600F18C66 /* ReceiptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F558C7F2A288F2600F18C66 /* ReceiptDetailView.swift */; };
+		4F558C822A28908C00F18C66 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F558C812A28908C00F18C66 /* ScannerView.swift */; };
+		4F558C842A2891E800F18C66 /* ReceiptScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F558C832A2891E800F18C66 /* ReceiptScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45E9EEA8A18ACAABC08FF702 /* Pods-ReceiftSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReceiftSwift.debug.xcconfig"; path = "Target Support Files/Pods-ReceiftSwift/Pods-ReceiftSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		4F558C672A266CB700F18C66 /* ReceiftSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiftSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F558C6A2A266CB700F18C66 /* ReceiftSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiftSwiftApp.swift; sourceTree = "<group>"; };
 		4F558C6C2A266CB700F18C66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		4F558C7B2A2889F400F18C66 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		4F558C7D2A288A4D00F18C66 /* Receipts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipts.swift; sourceTree = "<group>"; };
 		4F558C7F2A288F2600F18C66 /* ReceiptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptDetailView.swift; sourceTree = "<group>"; };
+		4F558C812A28908C00F18C66 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		4F558C832A2891E800F18C66 /* ReceiptScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScanner.swift; sourceTree = "<group>"; };
+		6E34107184B0922F441B6567 /* Pods-ReceiftSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReceiftSwift.release.xcconfig"; path = "Target Support Files/Pods-ReceiftSwift/Pods-ReceiftSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,11 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F3196EC11626EE393FA2159 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45E9EEA8A18ACAABC08FF702 /* Pods-ReceiftSwift.debug.xcconfig */,
+				6E34107184B0922F441B6567 /* Pods-ReceiftSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4F558C5E2A266CB700F18C66 = {
 			isa = PBXGroup;
 			children = (
 				4F558C692A266CB700F18C66 /* ReceiftSwift */,
 				4F558C682A266CB700F18C66 /* Products */,
+				0F3196EC11626EE393FA2159 /* Pods */,
+				563E609FE27DCC829724B161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +79,8 @@
 			children = (
 				4F558C6A2A266CB700F18C66 /* ReceiftSwiftApp.swift */,
 				4F558C6C2A266CB700F18C66 /* ContentView.swift */,
+				4F558C812A28908C00F18C66 /* ScannerView.swift */,
+				4F558C832A2891E800F18C66 /* ReceiptScanner.swift */,
 				4F558C792A28871400F18C66 /* RecentButtonView.swift */,
 				4F558C7B2A2889F400F18C66 /* HistoryView.swift */,
 				4F558C7F2A288F2600F18C66 /* ReceiptDetailView.swift */,
@@ -81,6 +100,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		563E609FE27DCC829724B161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F558C762A266CB800F18C66 /* Build configuration list for PBXNativeTarget "ReceiftSwift" */;
 			buildPhases = (
+				77D1A0E01E6AA384789C1253 /* [CP] Check Pods Manifest.lock */,
 				4F558C632A266CB700F18C66 /* Sources */,
 				4F558C642A266CB700F18C66 /* Frameworks */,
 				4F558C652A266CB700F18C66 /* Resources */,
@@ -146,6 +173,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77D1A0E01E6AA384789C1253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReceiftSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F558C632A266CB700F18C66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -156,6 +208,8 @@
 				4F558C7E2A288A4D00F18C66 /* Receipts.swift in Sources */,
 				4F558C7C2A2889F400F18C66 /* HistoryView.swift in Sources */,
 				4F558C7A2A28871400F18C66 /* RecentButtonView.swift in Sources */,
+				4F558C842A2891E800F18C66 /* ReceiptScanner.swift in Sources */,
+				4F558C822A28908C00F18C66 /* ScannerView.swift in Sources */,
 				4F558C6B2A266CB700F18C66 /* ReceiftSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +328,7 @@
 		};
 		4F558C772A266CB800F18C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E9EEA8A18ACAABC08FF702 /* Pods-ReceiftSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +340,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan your receipt!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +368,7 @@
 		};
 		4F558C782A266CB800F18C66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E34107184B0922F441B6567 /* Pods-ReceiftSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +380,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan your receipt!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
