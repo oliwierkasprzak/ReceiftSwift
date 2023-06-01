@@ -16,12 +16,12 @@ struct RecentButtonView: View {
                             LazyHGrid(rows: [GridItem(.fixed(120))], spacing: 16) {
                                 ForEach(0...3, id: \.self) { _ in
                                     Button {
-                                        
+
                                     } label: {
                                         Label("Receipt", systemImage: "bag.badge.questionmark")
                                     }
 
-                                    .frame(width: 100, height: 150)
+                                    .frame(width: 100, height: 100)
                                     .padding()
                                     .background(Color.orange.opacity(0.8))
                                     .foregroundColor(.white)

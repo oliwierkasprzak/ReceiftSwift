@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             VStack {
+                ScannerView()
+                    .padding(.top)
                 RecentButtonView()
                     .padding()
                 HistoryView()
